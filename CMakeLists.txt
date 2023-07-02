@@ -9,6 +9,7 @@ set(SRC_FILES
     src/Application.h
     src/Window.cpp
     src/Window.h
+    src/Shader.h
     extern/glad-4.6/src/glad.c)
 
 project(OpenGL-Base)
