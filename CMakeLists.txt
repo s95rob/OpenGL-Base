@@ -30,6 +30,6 @@ target_include_directories(OpenGL-Base
 target_link_directories(OpenGL-Base PUBLIC ${CMAKE_BINARY_DIR}/extern/glfw/src/${CMAKE_CFG_INTDIR})
 target_link_libraries(OpenGL-Base glfw3)
 
-# set startup project for visual studio
+# set visual studio properties
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT OpenGL-Base)
 set_property(TARGET OpenGL-Base PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/res")
