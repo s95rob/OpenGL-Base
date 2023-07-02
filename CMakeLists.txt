@@ -25,9 +25,11 @@ add_subdirectory(extern/glfw)
 add_dependencies(OpenGL-Base glfw)
 target_include_directories(OpenGL-Base 
     PUBLIC extern/glfw/include
-    PUBLIC extern/glad-4.6/include)
+    PUBLIC extern/glad-4.6/include
+    PUBLIC extern/glm)
 target_link_directories(OpenGL-Base PUBLIC ${CMAKE_BINARY_DIR}/extern/glfw/src/${CMAKE_CFG_INTDIR})
 target_link_libraries(OpenGL-Base glfw3)
 
 # set startup project for visual studio
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT OpenGL-Base)
+set_property(TARGET OpenGL-Base PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/res")

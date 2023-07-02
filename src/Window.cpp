@@ -28,7 +28,12 @@ void Window::Init() {
 		exit(-1);
 	}
 
+	glfwSwapInterval(1);
 	glViewport(0, 0, 1280, 720);
+}
+
+void Window::PollEvents() {
+	glfwPollEvents();
 }
 
 void Window::SwapBuffers() {
