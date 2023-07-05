@@ -1,7 +1,7 @@
 # OpenGL-Base
 Blank slate ready for writing OpenGL code. Perfect for learning/experimenting. 
 
-Includes helper classes for loading and using shaders and textures. 
+Includes [glfw](https://github.com/glfw/glfw), [glad](https://github.com/Dav1dde/glad), [glm](https://github.com/g-truc/glm), [stb_image](https://github.com/nothings/stb), and helper classes for shaders and textures out of the box. 
 
 ## Building
 
@@ -18,4 +18,4 @@ Includes helper classes for loading and using shaders and textures.
 
 ## Using 
 
-The Sandbox project includes Sandbox.cpp, which is a ready-to-go template for writing OpenGL code. 
+Run `git clone` and build. The GL-Sandbox project has a template source file for writing OpenGL code. 
