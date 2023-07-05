@@ -1,7 +1,7 @@
 #pragma once
 #include <GLBase.h>
 
-#define GL_EXAMPLE_DECL(name) \
+#define GL_EXAMPLE_DECLARE(name) \
 	class ExampleApp : public Application { \
 	public: using Application::Application; virtual void Run() override; }; \
 	int main() { \
