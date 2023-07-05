@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Window.h"
+#include "TextureCache.h"
 #include <string>
 
 struct ApplicationInit {
@@ -29,4 +30,6 @@ protected:
     Window m_window;
     bool m_running = false;
 
+private:
+    TextureCache m_textureCache;
 };

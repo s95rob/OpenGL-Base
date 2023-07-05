@@ -12,6 +12,8 @@ set(GL_BASE_SRC_FILES
     GL-Base/src/GL-Base/Window.h
     GL-Base/src/GL-Base/Shader.cpp
     GL-Base/src/GL-Base/Shader.h
+    GL-Base/src/GL-Base/Texture.h
+    GL-Base/src/GL-Base/TextureCache.h
     extern/glad-4.6/src/glad.c)
 
 set(GL_EXAMPLES_SRC_FILES GL-Examples/src/Main.cpp)
@@ -31,7 +33,8 @@ add_dependencies(GL-Base glfw)
 target_include_directories(GL-Base 
     PUBLIC extern/glfw/include
     PUBLIC extern/glad-4.6/include
-    PUBLIC extern/glm)
+    PUBLIC extern/glm
+    PUBLIC extern/stb)
 target_link_directories(GL-Base PUBLIC ${CMAKE_BINARY_DIR}/extern/glfw/src/${CMAKE_CFG_INTDIR})
 target_link_libraries(GL-Base glfw3)
 

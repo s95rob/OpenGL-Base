@@ -7,3 +7,4 @@
 #include "GL-Base/Window.h"
 #include "GL-Base/Log.h"
 #include "GL-Base/Shader.h"
+#include "GL-Base/Texture.h"

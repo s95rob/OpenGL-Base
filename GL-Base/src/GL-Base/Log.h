@@ -10,4 +10,8 @@ public:
 	static void Write(const std::string& message) {
 		std::cout << message << '\n';
 	}
+
+	static void Error(const std::string& message) {
+		std::cout << "[ ERROR ] " << message << '\n';
+	}
 };
