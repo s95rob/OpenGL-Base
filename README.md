@@ -1,5 +1,5 @@
 # OpenGL-Base
-Blank slate ready for writing OpenGL code. Perfect for learning/experimenting. 
+Minimal OpenGL wrapper library providing a blank slate ready for writing OpenGL code. Perfect for learning/experimenting. 
 
 Includes [glfw](https://github.com/glfw/glfw), [glad](https://github.com/Dav1dde/glad), [glm](https://github.com/g-truc/glm), [stb_image](https://github.com/nothings/stb), and helper classes for shaders and textures out of the box. 
 
