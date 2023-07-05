@@ -42,3 +42,10 @@ include(CMake/examples.cmake)
 
 add_example(Textures)
 add_example(VertexColors)
+
+add_executable(GL-Sandbox GL-Sandbox/src/Sandbox.cpp)
+add_dependencies(GL-Sandbox GL-Base)
+target_link_libraries(GL-Sandbox PUBLIC GL-Base)
+
+# Add startup project to Visual Studio
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT GL-Sandbox)
