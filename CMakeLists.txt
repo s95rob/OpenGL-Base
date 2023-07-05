@@ -48,5 +48,6 @@ add_executable(GL-Sandbox GL-Sandbox/src/Sandbox.cpp)
 add_dependencies(GL-Sandbox GL-Base)
 target_link_libraries(GL-Sandbox PUBLIC GL-Base)
 
-# Add startup project to Visual Studio
+# Add Visual Studio properties for GL-Sandbox
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT GL-Sandbox)
+set_property(TARGET GL-Sandbox PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/res")
