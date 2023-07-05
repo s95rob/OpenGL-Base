@@ -36,13 +36,8 @@ target_include_directories(GL-Base
     PUBLIC extern/glm
     PUBLIC extern/stb)
 target_link_directories(GL-Base PUBLIC ${CMAKE_BINARY_DIR}/extern/glfw/src/${CMAKE_CFG_INTDIR})
-target_link_libraries(GL-Base glfw3)
+target_link_libraries(GL-Base PUBLIC glfw3)
 
-add_executable(GL-Examples ${GL_EXAMPLES_SRC_FILES})
-add_dependencies(GL-Examples GL-Base)
-target_include_directories(GL-Examples PUBLIC GL-Base/src)
-target_link_libraries(GL-Examples GL-Base glfw3)
+include(CMake/examples.cmake)
 
-# set visual studio properties
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT GL-Examples)
-set_property(TARGET GL-Examples PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/res")
+add_example(Textures)
