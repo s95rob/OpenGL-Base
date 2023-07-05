@@ -31,6 +31,7 @@ add_subdirectory(extern/glfw)
 
 add_dependencies(GL-Base glfw)
 target_include_directories(GL-Base 
+    PUBLIC GL-Base/src
     PUBLIC extern/glfw/include
     PUBLIC extern/glad-4.6/include
     PUBLIC extern/glm

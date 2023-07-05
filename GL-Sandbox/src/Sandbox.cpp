@@ -2,6 +2,7 @@
 
 class SandboxApp : public Application {
 public:
+	using Application::Application;
 	virtual void Run() override;
 };
 
